@@ -5,10 +5,8 @@ $(document).on('click', '#submit', function () {
 function calculation() {
     var a = parseInt($('#charge_one').val().trim());
     var a_type = parseFloat($('#type_one').val());
-    var b = parseInt($('#charge_two').val().trim());
-    var b_type = parseFloat($('#type_two').val());
     var c = parseInt(Math.pow($("#distance").val().trim(), 2));
-    var answer = parseFloat((9988000000 * (a * a_type) * (b * b_type)) / c * 0.04);
+    var answer = parseFloat((9988000000 * ((a * a_type) / c * 0.04)));
     var roundedAnswer = Math.round(answer * 10) / 10;
     $('#answer').text(roundedAnswer + ' n');
     if($('#answer').text() != "NaN n"){
