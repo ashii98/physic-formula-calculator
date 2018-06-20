@@ -64,3 +64,30 @@ select{
     color: #333 !important;
     box-shadow: none !important;
 }
+@media screen and (max-width: 700px){
+    body, html{
+        overflow: auto !important;
+    }
+    h3{
+        font-size: 20px !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+    nav{
+        padding: 15px 37px !important;
+    }
+    .logo{
+        position: relative !important;
+    }
+    .card{
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+    .card-body{
+        height: auto !important;
+    }
+    .gradinet{
+        margin: 32px !important
+    }
+}

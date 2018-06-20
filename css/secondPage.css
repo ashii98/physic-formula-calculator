@@ -72,3 +72,30 @@ select{
 .btn.submit:focus, .btn.submit:active, .btn.submit:hover {
     box-shadow: 0 14px 26px -12px rgba(83, 108, 145, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(83, 108, 145, 0.2) !important;
 }
+@media screen and (max-width: 700px){
+    body, html{
+        overflow: auto !important;
+    }
+    h3{
+        font-size: 20px !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+    nav{
+        padding: 15px 37px !important;
+    }
+    .logo{
+        position: relative !important;
+    }
+    .card{
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+    .card-body{
+        height: auto !important;
+    }
+    .gradinet{
+        margin: 32px !important
+    }
+}
